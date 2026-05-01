@@ -1,0 +1,171 @@
+@use "../abstracts" as *;
+
+.equipo {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2vw;
+  flex-wrap: wrap;
+
+  article {
+    width: 25vw;
+    background-color: $surface-white-10;
+    padding: 1vw;
+    border-radius: $radius-lg;
+    box-sizing: border-box;
+    color: $color-white;
+
+    h3 {
+      margin: 0.5vw 0;
+      @include anton-title(2vw);
+      letter-spacing: 0.02em;
+      color: $color-white;
+    }
+
+    img {
+      width: 100%;
+      height: 30vw;
+      object-fit: cover;
+      border-radius: $radius-md;
+    }
+  }
+}
+
+.contenedor-equipo {
+  margin: 1vw 0;
+  text-align: center;
+}
+
+.rol-equipo {
+  margin: 1vw 0;
+  font-family: $font-title;
+  font-size: 1.5vw;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-white;
+  -webkit-text-stroke: 0.1vw $color-black;
+}
+
+.frase-equipo {
+  margin: 1vw 0;
+  font-size: 1.5vw;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.bio-equipo {
+  margin: 0;
+  font-size: 1.2vw;
+  line-height: 1.4;
+}
+
+.presentacion-equipo {
+  margin: 1vw 0;
+
+  h1 {
+    @include anton-title(3vw);
+    text-align: center;
+    color: $color-white;
+    margin: 1vw 0;
+  }
+
+  p {
+    font-size: 1.5vw;
+    text-align: center;
+    color: $color-white;
+    margin: 1vw 0;
+  }
+}
+
+.ale-biliato img {
+  filter: brightness(0.7);
+}
+
+@include tablet {
+  .presentacion-equipo {
+    padding: 1vw;
+
+    h1 {
+      font-size: 5vw;
+      margin: 1vw 0;
+    }
+
+    p {
+      font-size: 2vw;
+      margin: 1vw 3vw;
+    }
+  }
+
+  .contenedor-equipo {
+    margin: 2vw 0;
+  }
+
+  .equipo {
+    gap: 2vw;
+
+    article {
+      width: 30vw;
+
+      h3 {
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .presentacion-equipo {
+    padding: 0 2vw;
+
+    h1 {
+      font-size: 5vw;
+      line-height: 1.1;
+    }
+
+    p {
+      font-size: 3vw;
+      line-height: 1.4;
+    }
+  }
+
+  .contenedor-equipo {
+    padding: 1vw;
+  }
+
+  .equipo {
+    gap: 1.5vw;
+    padding: 1vw 2vw;
+
+    article {
+      width: 100%;
+      padding: 1vw 2vw;
+
+      h3 {
+        font-size: 5vw;
+        margin: 1vw;
+      }
+
+      img {
+        width: 80%;
+        height: 75vw;
+        object-fit: cover;
+        object-position: center;
+        border-radius: $radius-md;
+      }
+    }
+  }
+
+  .rol-equipo {
+    font-size: 4vw;
+    margin: 1vw;
+  }
+
+  .frase-equipo {
+    font-size: 3.5vw;
+  }
+
+  .bio-equipo {
+    font-size: 3vw;
+    line-height: 1.55;
+  }
+}

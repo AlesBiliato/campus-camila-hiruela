@@ -1,0 +1,375 @@
+@use "../abstracts" as *;
+
+.info-campus {
+  position: relative;
+  isolation: isolate;
+  padding: 1vw;
+}
+
+.imagen-decorativa-info-campus {
+  position: fixed;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  filter: $shadow-image;
+
+  &.dedo-arriba {
+    right: clamp(8px, 3vw, 36px);
+    bottom: 0;
+    width: min(22vw, 210px);
+  }
+
+  &.celebrando {
+    left: clamp(8px, 4vw, 48px);
+    width: min(34vw, 360px);
+    bottom: 0;
+  }
+}
+
+.contenedor-info-campus {
+  margin: 1vw;
+  text-align: center;
+  color: $color-white;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    @include anton-title(2vw);
+    display: inline-block;
+    margin: 1vw 0;
+    padding: 1vw;
+    background-color: $color-blue-dark;
+    border: 2px solid $color-white;
+    border-radius: $radius-lg;
+  }
+}
+
+.intro-info-campus {
+  max-width: 85%;
+  margin: 1vw auto;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.datos-campus {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+  margin: 1vw auto;
+
+  article:nth-of-type(1) a {
+    text-decoration: underline;
+  }
+}
+
+.item-info-campus {
+  background-color: $surface-white-18;
+  border: 2px solid $border-white-35;
+  border-radius: $radius-2xl;
+  padding: 0.5vw;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  margin: 0.5vw 0;
+
+  h3 {
+    @include anton-title(22px);
+    margin: 0.5vw 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.4;
+  }
+}
+
+.bloque-info-campus {
+  background-color: $surface-blue-35;
+  border: 2px solid $border-white-25;
+  border-radius: $radius-3xl;
+  padding: 0.5vw;
+  margin: 0.5vw 0;
+  text-align: left;
+
+  h3 {
+    @include chip-title(1.5vw);
+    text-align: center;
+  }
+}
+
+.bloque-incluye-campus {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.bloque-beneficios-campus {
+  text-align: center;
+}
+
+.titulo-beneficios-campus {
+  @include chip-title(1.5vw);
+  margin: 0 0 20px 0;
+}
+
+.grid-incluye-campus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.item-incluye-campus {
+  display: flex;
+  flex: 0 1 220px;
+  align-items: center;
+  justify-content: center;
+  min-height: 82px;
+  padding: 14px;
+  background-color: $surface-white-12;
+  border: 1px solid $border-white-18;
+  border-radius: $radius-2xl;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+}
+
+.promo-campus {
+  max-width: 800px;
+  margin: 1vw auto;
+  padding: 1vw;
+  background-color: $surface-white-14;
+  border-radius: $radius-xl;
+  border: 1px solid $border-white-20;
+  text-align: center;
+
+  h4 {
+    @include anton-title(26px);
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    margin: 6px 0;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+}
+
+.promo-campus-destacada {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(62, 187, 255, 0.18));
+  border: 2px solid $border-white-34;
+  box-shadow: $shadow-promo;
+}
+
+.promo-campus-secundaria {
+  background-color: $surface-white-12;
+}
+
+.promo-campus-info {
+  background-color: $surface-blue-26;
+}
+
+.etiqueta-promo {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: $radius-pill;
+  background-color: rgba(3, 38, 82, 0.82);
+  border: 1px solid $border-white-22;
+}
+
+.precio-promo {
+  font-size: 32px;
+  line-height: 1.1;
+
+  strong {
+    font-family: $font-title;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}
+
+.detalle-promo {
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+.cierre-info-campus {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  background-color: $surface-blue-45;
+  border: 2px solid $border-white-25;
+  border-radius: $radius-3xl;
+
+  h3 {
+    @include anton-title(30px);
+    margin: 0 0 14px 0;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+.ubicacion-campus {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.4;
+  display: inline-block;
+  transition: 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+  }
+}
+
+@include tablet {
+  .info-campus {
+    padding: 20px 24px 40px;
+  }
+
+  .imagen-decorativa-info-campus.dedo-arriba {
+    right: 40px;
+    bottom: 0;
+    width: min(25vw, 240px);
+  }
+
+  .imagen-decorativa-info-campus.celebrando {
+    left: 40px;
+    width: min(37vw, 320px);
+    bottom: 0;
+  }
+
+  .datos-campus {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .grid-incluye-campus {
+    gap: 12px;
+  }
+
+  .item-incluye-campus {
+    flex: 0 1 250px;
+  }
+
+  .promo-campus {
+    max-width: 720px;
+  }
+}
+
+@include mobile {
+  .info-campus {
+    padding: 1vw 2vw;
+  }
+
+  .imagen-decorativa-info-campus.dedo-arriba {
+    right: 1vw;
+    bottom: 0;
+    width: min(38vw, 300px);
+  }
+
+  .imagen-decorativa-info-campus.celebrando {
+    left: 1vw;
+    bottom: 0;
+    width: min(55vw, 400px);
+  }
+
+  .contenedor-info-campus h2 {
+    font-size: 4vw;
+  }
+
+  .intro-info-campus {
+    font-size: 3vw;
+  }
+
+  .datos-campus {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  .item-info-campus {
+    padding: 1vw;
+    border-radius: 12px;
+    margin: 0;
+
+    p {
+      font-size: 2.5vw;
+      line-height: 1.3;
+    }
+  }
+
+  .info-campus h3 {
+    font-size: 3.5vw;
+    -webkit-text-stroke: 0.7px black;
+    margin: 1vw 0;
+  }
+
+  .grid-incluye-campus {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .item-incluye-campus {
+    flex: initial;
+    min-height: auto;
+    padding: 1vw;
+    font-size: 3vw;
+    line-height: 1.45;
+  }
+
+  .etiqueta-promo {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .precio-promo {
+    font-size: 26px;
+  }
+
+  .ubicacion-campus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 2.5vw;
+    line-height: 1.3;
+
+    img {
+      width: 14px;
+      height: 14px;
+      margin-top: 0;
+      flex-shrink: 0;
+    }
+  }
+
+  .bloque-info-campus {
+    margin: 1vw 0;
+  }
+
+  .promo-campus h4 {
+    font-size: 3.5vw;
+    margin: 1vw;
+  }
+}

@@ -1,0 +1,63 @@
+$font-title: "Anton", sans-serif;
+$font-text: "Lato", sans-serif;
+
+$color-blue-dark: rgb(3, 38, 82);
+$color-blue-cta: rgb(0, 84, 166);
+$color-blue-light: #1d8fd6;
+$color-white: white;
+$color-black: black;
+
+$surface-white-08: rgba(255, 255, 255, 0.08);
+$surface-white-10: rgba(255, 255, 255, 0.1);
+$surface-white-12: rgba(255, 255, 255, 0.12);
+$surface-white-14: rgba(255, 255, 255, 0.14);
+$surface-white-16: rgba(255, 255, 255, 0.16);
+$surface-white-18: rgba(255, 255, 255, 0.18);
+$surface-blue-26: rgba(3, 38, 82, 0.26);
+$surface-blue-28: rgba(3, 38, 82, 0.28);
+$surface-blue-35: rgba(3, 38, 82, 0.35);
+$surface-blue-45: rgba(3, 38, 82, 0.45);
+$surface-blue-80: rgba(3, 38, 82, 0.8);
+$surface-dark-25: rgba(0, 0, 0, 0.25);
+$surface-dark-35: rgba(0, 0, 0, 0.35);
+
+$border-white-14: rgba(255, 255, 255, 0.14);
+$border-white-18: rgba(255, 255, 255, 0.18);
+$border-white-20: rgba(255, 255, 255, 0.2);
+$border-white-22: rgba(255, 255, 255, 0.22);
+$border-white-25: rgba(255, 255, 255, 0.25);
+$border-white-28: rgba(255, 255, 255, 0.28);
+$border-white-34: rgba(255, 255, 255, 0.34);
+$border-white-35: rgba(255, 255, 255, 0.35);
+
+$radius-sm: 6px;
+$radius-md: 8px;
+$radius-lg: 10px;
+$radius-xl: 12px;
+$radius-2xl: 14px;
+$radius-3xl: 16px;
+$radius-pill: 999px;
+
+$shadow-nav:
+  0 0 0 1px rgba(255, 255, 255, 0.08),
+  0 0 26px rgba(3, 38, 82, 0.22),
+  0 0 56px rgba(3, 38, 82, 0.16);
+
+$shadow-nav-mobile:
+  0 0 0 1px rgba(255, 255, 255, 0.08),
+  0 0 20px rgba(3, 38, 82, 0.2),
+  0 0 42px rgba(3, 38, 82, 0.14);
+
+$shadow-nav-tablet:
+  0 0 0 1px rgba(255, 255, 255, 0.08),
+  0 0 24px rgba(3, 38, 82, 0.2),
+  0 0 48px rgba(3, 38, 82, 0.14);
+
+$shadow-cta: 0 10px 24px rgba(0, 0, 0, 0.25);
+$shadow-promo: 0 14px 36px rgba(2, 20, 44, 0.2);
+$shadow-image: drop-shadow(0 18px 34px rgba(2, 20, 44, 0.18));
+
+$site-max-width: 1040px;
+$tablet-min: 768px;
+$tablet-max: 1024px;
+$mobile-max: 767px;

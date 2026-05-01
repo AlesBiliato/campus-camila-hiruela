@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.boton-inscripcion {
+  @include button-campus;
+  padding: 14px 30px;
+  border-radius: $radius-md;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+  box-shadow: $shadow-cta;
+}
+
+@include tablet {
+  .boton-inscripcion {
+    font-size: 20px;
+    padding: 14px 26px;
+  }
+}
+
+@include mobile {
+  .boton-inscripcion {
+    font-size: 18px;
+    padding: 2vw;
+    margin: 1vw;
+  }
+}
