@@ -4,7 +4,7 @@ const minutosElemento = document.getElementById("minutos");
 const segundosElemento = document.getElementById("segundos");
 
 if (diasElemento && horasElemento && minutosElemento && segundosElemento) {
-  const fechaCampus = new Date(2026, 6, 13, 0, 0, 0).getTime();
+  const fechaCampus = new Date("2026-07-13T00:00:00-03:00").getTime();
 
   function actualizarCuentaRegresiva() {
     const ahora = new Date().getTime();
