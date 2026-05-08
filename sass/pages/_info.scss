@@ -37,7 +37,7 @@
   z-index: 1;
 
   h2 {
-    @include anton-title(2vw);
+    @include anton-title(clamp(26px, 2.2vw, 38px));
     display: inline-block;
     margin: 1vw 0;
     padding: 1vw;
@@ -50,7 +50,7 @@
 .intro-info-campus {
   max-width: 85%;
   margin: 1vw auto;
-  font-size: 1.5vw;
+  font-size: clamp(18px, 1.35vw, 24px);
   line-height: 1.5;
   font-style: italic;
 }
@@ -141,6 +141,8 @@
 }
 
 .promo-campus {
+  position: relative;
+  overflow: hidden;
   max-width: 800px;
   margin: 1vw auto;
   padding: 1vw;
@@ -169,6 +171,33 @@
   box-shadow: $shadow-promo;
 }
 
+.promo-campus-agotada {
+  background: linear-gradient(135deg, rgba(3, 38, 82, 0.48), rgba(255, 255, 255, 0.1));
+  border-style: dashed;
+
+  h4,
+  .precio-promo-agotado {
+    opacity: 0.82;
+  }
+}
+
+.sello-promo-agotada {
+  position: absolute;
+  top: 18px;
+  right: -42px;
+  width: 160px;
+  padding: 6px 0;
+  background-color: rgba(120, 28, 28, 0.92);
+  color: $color-white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(35deg);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
 .promo-campus-secundaria {
   background-color: $surface-white-12;
 }
@@ -190,6 +219,10 @@
   border: 1px solid $border-white-22;
 }
 
+.etiqueta-promo-agotada {
+  background-color: rgba(120, 28, 28, 0.82);
+}
+
 .precio-promo {
   font-size: 32px;
   line-height: 1.1;
@@ -201,18 +234,38 @@
   }
 }
 
+.precio-promo-agotado {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
 .detalle-promo {
   font-size: 16px;
   opacity: 0.95;
 }
 
 .cierre-info-campus {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 28px 24px;
-  background-color: $surface-blue-45;
-  border: 2px solid $border-white-25;
-  border-radius: $radius-3xl;
+  position: relative;
+  max-width: 920px;
+  margin: 46px auto 10px;
+  padding: 34px 28px 12px;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid $border-white-25;
+  border-radius: 0;
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $font-title;
+    font-size: 86px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.34);
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+  }
 
   h3 {
     @include anton-title(30px);
@@ -223,8 +276,11 @@
 
   p {
     margin: 0;
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: clamp(20px, 1.55vw, 27px);
+    line-height: 1.55;
+    font-style: italic;
+    text-wrap: balance;
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.28);
   }
 }
 
@@ -295,11 +351,11 @@
   }
 
   .contenedor-info-campus h2 {
-    font-size: 4vw;
+    font-size: clamp(24px, 7vw, 34px);
   }
 
   .intro-info-campus {
-    font-size: 3vw;
+    font-size: clamp(15px, 4vw, 18px);
   }
 
   .datos-campus {
@@ -371,5 +427,27 @@
   .promo-campus h4 {
     font-size: 3.5vw;
     margin: 1vw;
+  }
+
+  .cierre-info-campus {
+    margin-top: 32px;
+    padding: 28px 12px 8px;
+
+    &::before {
+      top: -16px;
+      font-size: 64px;
+    }
+
+    p {
+      font-size: clamp(18px, 4.8vw, 22px);
+      line-height: 1.45;
+    }
+  }
+
+  .sello-promo-agotada {
+    top: 14px;
+    right: -48px;
+    width: 150px;
+    font-size: 11px;
   }
 }
