@@ -202,6 +202,131 @@
 }
 
 @include tablet {
+  .pagina-inicio {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .cabecera-principal {
+      flex: 0 0 auto;
+      gap: clamp(6px, 1.2dvh, 14px);
+      padding: clamp(8px, 1.4dvh, 14px) 20px clamp(6px, 1.2dvh, 12px);
+    }
+
+    .header-centro {
+      gap: clamp(6px, 1.2dvh, 12px);
+    }
+
+    .logo-campus img {
+      width: clamp(76px, 10dvh, 112px);
+    }
+
+    .inicio-nav {
+      padding: clamp(8px, 1.2dvh, 14px) 14px;
+
+      ul {
+        gap: clamp(6px, 1dvh, 10px);
+      }
+
+      ul li a {
+        min-height: clamp(36px, 5.2dvh, 46px);
+        font-size: clamp(13px, 1.9dvh, 15px);
+        padding: clamp(7px, 1.2dvh, 10px) 10px;
+      }
+    }
+
+    main {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-inicio {
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+
+    .contenido-video {
+      max-width: min(640px, 92vw);
+      padding: clamp(12px, 2dvh, 28px) 28px;
+      gap: clamp(2px, 0.8dvh, 8px);
+
+      h1 {
+        font-size: clamp(30px, 5dvh, 40px);
+        margin-bottom: clamp(4px, 1dvh, 10px);
+      }
+
+      h2 {
+        font-size: clamp(42px, 7dvh, 62px);
+        margin-bottom: clamp(8px, 1.6dvh, 16px);
+      }
+
+      p {
+        font-size: clamp(17px, 2.5dvh, 22px);
+        line-height: 1.32;
+        margin-bottom: clamp(10px, 1.8dvh, 20px);
+      }
+    }
+
+    .cuenta-regresiva-video {
+      margin-bottom: clamp(10px, 1.7dvh, 20px);
+    }
+
+    .texto-cuenta-regresiva {
+      font-size: clamp(16px, 2.1dvh, 19px);
+      margin-bottom: clamp(6px, 1dvh, 10px);
+    }
+
+    .contador-campus {
+      gap: clamp(8px, 1.2dvh, 12px);
+      flex-wrap: nowrap;
+    }
+
+    .item-contador {
+      min-width: clamp(72px, 10dvh, 88px);
+      padding: clamp(8px, 1.3dvh, 12px) 8px;
+
+      span {
+        font-size: clamp(25px, 4.2dvh, 32px);
+        margin-bottom: clamp(3px, 0.8dvh, 6px);
+      }
+
+      p {
+        font-size: clamp(12px, 1.8dvh, 14px);
+      }
+    }
+
+    .boton-inscripcion {
+      font-size: clamp(18px, 2.8dvh, 20px);
+      padding: clamp(10px, 1.6dvh, 14px) 24px;
+    }
+
+    .franja-contacto-campus {
+      flex: 0 0 auto;
+      margin: clamp(6px, 1dvh, 12px) auto clamp(5px, 0.8dvh, 8px);
+      padding: clamp(8px, 1.2dvh, 12px) 16px;
+      gap: clamp(8px, 1.2dvh, 14px);
+    }
+
+    .grupo-contacto-campus {
+      gap: clamp(8px, 1.2dvh, 14px);
+    }
+
+    .item-contacto-campus {
+      padding: clamp(7px, 1.1dvh, 9px) 12px;
+
+      span {
+        font-size: clamp(13px, 1.8dvh, 15px);
+      }
+    }
+
+    .entidad-campus img {
+      max-height: clamp(42px, 6.5dvh, 64px);
+    }
+  }
+
   .video-inicio {
     min-height: 70vh;
 
@@ -248,6 +373,123 @@
 }
 
 @include mobile {
+  .pagina-inicio {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .cabecera-principal {
+      flex: 0 0 auto;
+      padding: clamp(5px, 1.1dvh, 10px) 12px clamp(4px, 0.9dvh, 8px);
+    }
+
+    .logo-campus img {
+      width: clamp(58px, 10dvh, 86px);
+    }
+
+    .menu-toggle {
+      width: clamp(42px, 7dvh, 52px);
+      height: clamp(42px, 7dvh, 52px);
+      font-size: clamp(22px, 4dvh, 28px);
+    }
+
+    main {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-inicio {
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+
+    .contenido-video {
+      padding: clamp(8px, 1.8dvh, 16px) 12px;
+      gap: clamp(2px, 0.6dvh, 6px);
+
+      h1 {
+        font-size: clamp(24px, 5dvh, 34px);
+        margin: 0 0 clamp(3px, 0.8dvh, 6px) 0;
+      }
+
+      h2 {
+        font-size: clamp(30px, 6.4dvh, 42px);
+        margin: 0 0 clamp(6px, 1.2dvh, 10px) 0;
+      }
+
+      p {
+        max-width: 92%;
+        font-size: clamp(13px, 2.3dvh, 16px);
+        line-height: 1.28;
+        margin: clamp(6px, 1.2dvh, 12px) 0 clamp(4px, 0.8dvh, 8px);
+      }
+    }
+
+    .cuenta-regresiva-video {
+      margin: clamp(4px, 0.8dvh, 8px) 0 clamp(8px, 1.4dvh, 12px);
+    }
+
+    .texto-cuenta-regresiva {
+      font-size: clamp(14px, 2.5dvh, 17px);
+      margin-bottom: clamp(5px, 0.9dvh, 8px);
+    }
+
+    .contador-campus {
+      width: min(360px, 96vw);
+      gap: clamp(5px, 1vw, 8px);
+      flex-wrap: nowrap;
+    }
+
+    .item-contador {
+      flex: 1 1 0;
+      min-width: 0;
+      padding: clamp(6px, 1.2dvh, 9px) 4px;
+
+      span {
+        font-size: clamp(20px, 4.4dvh, 27px);
+        margin-bottom: clamp(2px, 0.5dvh, 4px);
+      }
+
+      p {
+        font-size: clamp(10px, 1.9dvh, 12px);
+      }
+    }
+
+    .boton-inscripcion {
+      font-size: clamp(17px, 3dvh, 20px);
+      padding: clamp(9px, 1.7dvh, 12px) 18px;
+      margin: 0;
+    }
+
+    .franja-contacto-campus {
+      flex: 0 0 auto;
+      margin: clamp(4px, 0.8dvh, 8px) auto clamp(4px, 0.8dvh, 8px);
+      padding: clamp(5px, 0.9dvh, 8px);
+      gap: clamp(5px, 1vw, 8px);
+    }
+
+    .grupo-contacto-campus {
+      gap: clamp(5px, 1vw, 8px);
+    }
+
+    .item-contacto-campus {
+      padding: clamp(7px, 1.4dvh, 10px);
+    }
+
+    .item-contacto-campus img {
+      width: clamp(18px, 3.6dvh, 22px);
+      height: clamp(18px, 3.6dvh, 22px);
+    }
+
+    .entidad-campus img {
+      max-width: clamp(42px, 11vw, 58px);
+      max-height: clamp(34px, 5.8dvh, 48px);
+    }
+  }
+
   .video-inicio {
     min-height: 72vh;
     padding: 0;
@@ -280,6 +522,31 @@
       font-size: 4vw;
       line-height: 1.35;
       margin: 4vw 0 1vw 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .pagina-inicio {
+    height: auto;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    main {
+      flex: 0 0 auto;
+      min-height: auto;
+      display: block;
+    }
+
+    .video-inicio {
+      flex: 0 0 auto;
+      min-height: clamp(360px, 100dvh, 560px);
+    }
+
+    .franja-contacto-campus {
+      flex: 0 0 auto;
+      margin-bottom: 10px;
     }
   }
 }
