@@ -38,6 +38,7 @@ const inicioNav = document.getElementById("inicio-nav");
 
 if (menuToggle && inicioNav) {
   menuToggle.addEventListener("click", () => {
-    inicioNav.classList.toggle("menu-abierto");
+    const menuAbierto = inicioNav.classList.toggle("menu-abierto");
+    menuToggle.setAttribute("aria-expanded", String(menuAbierto));
   });
 }

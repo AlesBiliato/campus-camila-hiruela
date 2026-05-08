@@ -36,7 +36,7 @@
   position: relative;
   z-index: 1;
 
-  h2 {
+  h1 {
     @include anton-title(clamp(26px, 2.2vw, 38px));
     display: inline-block;
     margin: 1vw 0;
@@ -75,7 +75,7 @@
   backdrop-filter: blur(8px);
   margin: 0.5vw 0;
 
-  h3 {
+  h2 {
     @include anton-title(22px);
     margin: 0.5vw 0;
   }
@@ -95,7 +95,7 @@
   margin: 0.5vw 0;
   text-align: left;
 
-  h3 {
+  h2 {
     @include chip-title(1.5vw);
     text-align: center;
   }
@@ -350,7 +350,7 @@
     width: min(55vw, 400px);
   }
 
-  .contenedor-info-campus h2 {
+  .contenedor-info-campus h1 {
     font-size: clamp(24px, 7vw, 34px);
   }
 
@@ -375,7 +375,7 @@
     }
   }
 
-  .info-campus h3 {
+  .info-campus h2 {
     font-size: 3.5vw;
     -webkit-text-stroke: 0.7px black;
     margin: 1vw 0;
