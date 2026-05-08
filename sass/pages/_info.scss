@@ -151,7 +151,7 @@
   border: 1px solid $border-white-20;
   text-align: center;
 
-  h4 {
+  h3 {
     @include anton-title(26px);
     margin: 0 0 10px 0;
     font-weight: 400;
@@ -175,7 +175,7 @@
   background: linear-gradient(135deg, rgba(3, 38, 82, 0.48), rgba(255, 255, 255, 0.1));
   border-style: dashed;
 
-  h4,
+  h3,
   .precio-promo-agotado {
     opacity: 0.82;
   }
@@ -424,7 +424,7 @@
     margin: 1vw 0;
   }
 
-  .promo-campus h4 {
+  .promo-campus h3 {
     font-size: 3.5vw;
     margin: 1vw;
   }

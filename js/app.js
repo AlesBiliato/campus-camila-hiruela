@@ -40,5 +40,6 @@ if (menuToggle && inicioNav) {
   menuToggle.addEventListener("click", () => {
     const menuAbierto = inicioNav.classList.toggle("menu-abierto");
     menuToggle.setAttribute("aria-expanded", String(menuAbierto));
+    menuToggle.setAttribute("aria-label", menuAbierto ? "Cerrar menú" : "Abrir menú");
   });
 }
