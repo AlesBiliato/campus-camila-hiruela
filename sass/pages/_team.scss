@@ -4,76 +4,85 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 2vw;
+  gap: clamp(18px, 2vw, 32px);
   flex-wrap: wrap;
+  width: min(1320px, calc(100% - 32px));
+  margin: 0 auto;
 
   article {
-    width: 25vw;
+    width: clamp(300px, 29vw, 380px);
     background-color: $surface-white-10;
-    padding: 1vw;
+    padding: clamp(14px, 1vw, 20px);
     border-radius: $radius-lg;
     box-sizing: border-box;
     color: $color-white;
 
     h3 {
-      margin: 0.5vw 0;
-      @include anton-title(2vw);
+      margin: 8px 0;
+      @include anton-title(clamp(26px, 1.8vw, 34px));
       letter-spacing: 0.02em;
       color: $color-white;
+      white-space: nowrap;
     }
 
     img {
       width: 100%;
-      height: 30vw;
+      max-width: 320px;
+      height: clamp(330px, 30vw, 420px);
       object-fit: cover;
       border-radius: $radius-md;
+      display: block;
+      margin: 0 auto;
     }
   }
 }
 
 .contenedor-equipo {
-  margin: 1vw 0;
+  margin: clamp(18px, 2vw, 32px) 0;
   text-align: center;
 }
 
 .rol-equipo {
-  margin: 1vw 0;
+  margin: clamp(10px, 1vw, 16px) 0;
   font-family: $font-title;
-  font-size: 1.5vw;
+  font-size: clamp(18px, 1.4vw, 24px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $color-white;
-  -webkit-text-stroke: 0.1vw $color-black;
+  -webkit-text-stroke: 1px $color-black;
 }
 
 .frase-equipo {
-  margin: 1vw 0;
-  font-size: 1.5vw;
+  margin: clamp(10px, 1vw, 16px) 0;
+  font-size: clamp(17px, 1.25vw, 21px);
   line-height: 1.45;
   font-weight: 700;
 }
 
 .bio-equipo {
   margin: 0;
-  font-size: 1.2vw;
+  font-size: clamp(15px, 1vw, 17px);
   line-height: 1.4;
 }
 
 .presentacion-equipo {
-  margin: 1vw 0;
+  max-width: 920px;
+  margin: clamp(14px, 2vw, 34px) auto;
+  padding: 0 20px;
 
   h1 {
-    @include anton-title(3vw);
+    @include anton-title(clamp(36px, 3vw, 54px));
     text-align: center;
     color: $color-white;
-    margin: 1vw 0;
+    margin: clamp(10px, 1vw, 18px) 0;
   }
 
   p {
-    font-size: 1.5vw;
+    font-size: clamp(18px, 1.35vw, 24px);
     text-align: center;
     color: $color-white;
-    margin: 1vw 0;
+    margin: clamp(10px, 1vw, 16px) auto;
+    line-height: 1.5;
   }
 }
 
@@ -101,13 +110,17 @@
   }
 
   .equipo {
-    gap: 2vw;
+    gap: 18px;
 
     article {
-      width: 30vw;
+      width: clamp(230px, 30vw, 300px);
 
       h3 {
-        font-size: 3vw;
+        font-size: clamp(24px, 3vw, 32px);
+      }
+
+      img {
+        height: clamp(300px, 40vw, 390px);
       }
     }
   }
