@@ -1,6 +1,6 @@
 # Campus Camila Hiruela
 
-Web multipágina desarrollada para el Campus Camila Hiruela, un campus de vóley en Jujuy. El proyecto está construido con HTML, JavaScript, Sass y Vite, con un enfoque en diseño visual, responsive y experiencia de usuario.
+Web multipágina desarrollada para el Campus Camila Hiruela, un campus de vóley en Jujuy. El proyecto está construido con HTML, CSS, JavaScript y Vite, con un enfoque en diseño visual, responsive y experiencia de usuario.
 
 ## Demo
 
@@ -9,8 +9,8 @@ Web multipágina desarrollada para el Campus Camila Hiruela, un campus de vóley
 ## Tecnologías
 
 - HTML5
+- CSS3
 - JavaScript
-- Sass
 - Vite
 - Netlify
 
@@ -41,8 +41,9 @@ La build final se genera en la carpeta `dist`.
 ```bash
 .
 ├── img/
+├── css/
 ├── js/
-├── sass/
+├── public/
 ├── video/
 ├── index.html
 ├── quienes-somos.html
