@@ -55,6 +55,6 @@ La build final se genera en la carpeta `dist`.
 
 ## Autor
 
-Desarrollado por Alessandro Biliato.
+Desarrollado por Alessandro Biliato
 
 [GitHub Profile](https://github.com/AlesBiliato)
