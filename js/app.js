@@ -5,6 +5,7 @@ const segundosElemento = document.getElementById("segundos");
 
 if (diasElemento && horasElemento && minutosElemento && segundosElemento) {
   const fechaCampus = new Date("2026-07-13T00:00:00-03:00").getTime();
+  let intervaloCuentaRegresiva;
 
   function actualizarCuentaRegresiva() {
     const ahora = new Date().getTime();
@@ -15,7 +16,11 @@ if (diasElemento && horasElemento && minutosElemento && segundosElemento) {
       horasElemento.textContent = "00";
       minutosElemento.textContent = "00";
       segundosElemento.textContent = "00";
-      clearInterval(intervaloCuentaRegresiva);
+
+      if (intervaloCuentaRegresiva) {
+        clearInterval(intervaloCuentaRegresiva);
+      }
+
       return;
     }
 
@@ -31,8 +36,9 @@ if (diasElemento && horasElemento && minutosElemento && segundosElemento) {
   }
 
   actualizarCuentaRegresiva();
-  const intervaloCuentaRegresiva = setInterval(actualizarCuentaRegresiva, 1000);
+  intervaloCuentaRegresiva = setInterval(actualizarCuentaRegresiva, 1000);
 }
+
 const menuToggle = document.getElementById("menu-toggle");
 const inicioNav = document.getElementById("inicio-nav");
 

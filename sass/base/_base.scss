@@ -1,0 +1,60 @@
+/* ==========================================================
+    01. BASE GENERAL
+    Reset basico, tipografias globales, fondo del sitio y
+    utilidades reutilizables.
+   ========================================================== */
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/topography.svg"), linear-gradient(to right, rgba(3, 38, 82, 0.94), #1d8fd6);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --bg-contenedor: rgba(255, 255, 255, 0.12);
+  --dark-blue: rgb(3, 38, 82);
+  --br-movil: 6px;
+  --border-color-contenedor: rgba(255, 255, 255, 0.35);
+  --difuminado: blur(8px);
+}

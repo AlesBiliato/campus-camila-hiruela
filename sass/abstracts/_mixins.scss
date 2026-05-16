@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+@mixin mobile {
+  @media (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin anton-title($size, $stroke: 1px) {
+  font-family: $font-title;
+  font-size: $size;
+  text-transform: uppercase;
+  -webkit-text-stroke: $stroke $color-black;
+}

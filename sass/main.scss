@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* ==========================================================
+    INDICE DE EDICION
+    01. Base general
+    02. Franja de contacto
+    03. Cabecera y navegacion
+    04. Botones y llamada a la accion
+    05. Cuenta regresiva
+    06. Pagina de inicio
+    07. Pagina de informacion
+    08. Pagina de equipo
+    09. Pagina 404
+   ========================================================== */
+
+// 1. Vendors
+@use "vendors/normalize";
+
+// 2. Abstracts
+@use "abstracts";
+
+// 3. Base stuff
+@use "base/base";
+
+// 4. Layout-related sections
+@use "layout/footer";
+@use "layout/header";
+
+// 5. Components
+@use "components/button";
+@use "components/countdown";
+
+// 6. Pages
+@use "pages/home";
+@use "pages/info";
+@use "pages/team";
+@use "pages/error";
+
+// 7. Themes
+@use "themes/default";

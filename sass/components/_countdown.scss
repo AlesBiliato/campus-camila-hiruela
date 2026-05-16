@@ -1,0 +1,97 @@
+/* ==========================================================
+    05. CUENTA REGRESIVA
+    Contador de dias, horas, minutos y segundos en portada.
+   ========================================================== */
+
+.cuenta-regresiva-video {
+  margin-top: 0;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.texto-cuenta-regresiva {
+  font-family: "Anton", sans-serif;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: white;
+  opacity: 0.88;
+  font-style: normal;
+}
+
+.contador-campus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.item-contador {
+  min-width: 80px;
+  padding: 12px 10px;
+  background-color: rgb(3, 38, 82);
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  span {
+    display: block;
+    font-family: "Anton", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    padding-left: 0.12em;
+    margin-bottom: 6px;
+    color: white;
+  }
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.2;
+    color: white;
+    font-style: normal;
+  }
+}
+
+/* Responsive cuenta regresiva - tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .texto-cuenta-regresiva {
+    font-size: 19px;
+  }
+  .item-contador {
+    min-width: 88px;
+    padding: 14px 10px;
+    span {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+/* Responsive cuenta regresiva - movil */
+
+@media (max-width: 767px) {
+  .cuenta-regresiva-video {
+    margin: 1vw 0;
+  }
+  .texto-cuenta-regresiva {
+    font-size: 5vw;
+  }
+  .contador-campus {
+    gap: 2vw;
+    flex-wrap: nowrap;
+  }
+  .item-contador {
+    padding: 2vw;
+    span {
+      font-size: 24px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
