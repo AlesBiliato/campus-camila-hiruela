@@ -4,11 +4,13 @@
     utilidades reutilizables.
    ========================================================== */
 
+@use "../abstracts" as *;
+
 html,
 body {
   min-height: 100%;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: $font-text;
 }
 
 html {
@@ -19,7 +21,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../img/topography.svg"), linear-gradient(to right, rgba(3, 38, 82, 0.94), #1d8fd6);
+  background-image: url("../img/topography.svg"), linear-gradient(to right, rgba($color-blue-dark, 0.94), $color-blue-light);
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -49,12 +51,4 @@ input,
 textarea,
 select {
   font: inherit;
-}
-
-:root {
-  --bg-contenedor: rgba(255, 255, 255, 0.12);
-  --dark-blue: rgb(3, 38, 82);
-  --br-movil: 6px;
-  --border-color-contenedor: rgba(255, 255, 255, 0.35);
-  --difuminado: blur(8px);
 }

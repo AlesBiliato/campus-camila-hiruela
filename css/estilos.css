@@ -62,14 +62,6 @@ select {
   font: inherit;
 }
 
-:root {
-  --bg-contenedor: rgba(255, 255, 255, 0.12);
-  --dark-blue: rgb(3, 38, 82);
-  --br-movil: 6px;
-  --border-color-contenedor: rgba(255, 255, 255, 0.35);
-  --difuminado: blur(8px);
-}
-
 /* ==========================================================
     02. FRANJA DE CONTACTO
     Logos de entidades y accesos a Instagram, WhatsApp y mapa.
@@ -243,8 +235,8 @@ select {
 }
 .inicio-nav li a:hover {
   background-color: white;
-  color: var(--dark-blue);
-  border-color: var(--dark-blue);
+  color: rgb(3, 38, 82);
+  border-color: rgb(3, 38, 82);
 }
 
 .menu-toggle {
@@ -1133,7 +1125,7 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--bg-contenedor);
+  background-color: rgba(255, 255, 255, 0.12);
   border: 2px solid rgba(255, 255, 255, 0.35);
   border-radius: 14px;
   padding: 0.5vw;
@@ -1163,7 +1155,7 @@ select {
 
 .ubicacion-campus:hover {
   background-color: white;
-  color: var(--dark-blue);
+  color: rgb(3, 38, 82);
 }
 
 /* Informacion - bloques de incluye y beneficios */
@@ -1224,7 +1216,7 @@ select {
   justify-content: center;
   min-height: 82px;
   padding: 14px;
-  background-color: var(--bg-contenedor);
+  background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 14px;
   text-align: center;
@@ -1242,7 +1234,7 @@ select {
   max-width: 800px;
   margin: 1vw auto;
   padding: 1vw;
-  background-color: var(--bg-contenedor);
+  background-color: rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -1417,7 +1409,7 @@ select {
     font-size: 3.5vw;
     -webkit-text-stroke: 0.7px black;
     margin: 1vw 0;
-    border-radius: var(--br-movil);
+    border-radius: 6px;
   }
   .imagen-decorativa-info-campus.dedo-arriba {
     right: 1vw;
@@ -1448,8 +1440,8 @@ select {
     gap: 6px;
     font-size: 2.5vw;
     line-height: 1.3;
-    border-radius: var(--br-movil);
-    border: 2px dashed var(--border-color-contenedor);
+    border-radius: 6px;
+    border: 2px dashed rgba(255, 255, 255, 0.35);
   }
   .item-info-campus {
     padding: 1vw;

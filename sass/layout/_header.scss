@@ -3,6 +3,8 @@
     Logo, menu principal y menu hamburguesa para movil.
    ========================================================== */
 
+@use "../abstracts" as *;
+
 .cabecera-principal {
   display: flex;
   align-items: center;
@@ -66,8 +68,8 @@
   }
   li a:hover {
     background-color: white;
-    color: var(--dark-blue);
-    border-color: var(--dark-blue);
+    color: $color-blue-dark;
+    border-color: $color-blue-dark;
   }
 }
 
