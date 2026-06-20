@@ -1507,16 +1507,15 @@ select {
     Presentacion de integrantes, tarjetas, fotos y biografias.
    ========================================================== */
 .equipo {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(18px, 2vw, 32px);
-  flex-wrap: wrap;
-  width: min(1320px, 100% - 32px);
+  width: min(1400px, 100% - 32px);
   margin: 0 auto;
 }
 .equipo article {
-  width: clamp(300px, 29vw, 380px);
+  width: 100%;
+  min-width: 0;
   background-color: rgba(255, 255, 255, 0.1);
   padding: clamp(14px, 1vw, 20px);
   border-radius: 10px;
@@ -1531,7 +1530,8 @@ select {
   -webkit-text-stroke: 1px black;
   letter-spacing: 0.02em;
   color: white;
-  white-space: nowrap;
+  white-space: normal;
+  text-wrap: balance;
 }
 .equipo article img {
   width: 100%;
@@ -1571,6 +1571,10 @@ select {
   line-height: 1.4;
 }
 
+.bio-equipo + .bio-equipo {
+  margin-top: 0.75em;
+}
+
 .presentacion-equipo {
   max-width: 920px;
   margin: clamp(14px, 2vw, 34px) auto;
@@ -1598,7 +1602,7 @@ select {
 }
 
 /* Responsive equipo - tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .presentacion-equipo {
     padding: 1vw;
   }
@@ -1614,10 +1618,9 @@ select {
     margin: 2vw 0;
   }
   .equipo {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
-  }
-  .equipo article {
-    width: clamp(230px, 30vw, 300px);
+    width: min(980px, 100% - 24px);
   }
   .equipo article h3 {
     font-size: clamp(24px, 3vw, 32px);
@@ -1644,6 +1647,8 @@ select {
   }
   .equipo {
     gap: 1.5vw;
+    grid-template-columns: 1fr;
+    width: min(640px, 100% - 24px);
     padding: 1vw 2vw;
   }
   .equipo article {
