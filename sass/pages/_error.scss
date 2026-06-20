@@ -6,8 +6,8 @@
 body.pagina-error {
   color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
   padding: 24px;
   background-image: url("../img/topography.svg"), linear-gradient(to right, rgba(3, 38, 82, 0.96), #1d8fd6);
   background-repeat: repeat, no-repeat;
@@ -17,6 +17,7 @@ body.pagina-error {
 
 .pagina-404 {
   width: min(720px, 100%);
+  margin: auto 0;
   padding: 36px 28px;
   text-align: center;
   background: rgba(3, 38, 82, 0.42);

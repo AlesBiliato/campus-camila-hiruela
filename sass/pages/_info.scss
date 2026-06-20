@@ -8,7 +8,7 @@
 .info-campus {
   position: relative;
   isolation: isolate;
-  padding: 1vw;
+  padding: 0 5vw;
 }
 
 /* Informacion - imagenes decorativas laterales */
@@ -170,7 +170,6 @@
 
 .item-incluye-campus {
   display: flex;
-  flex: 0 1 220px;
   align-items: center;
   justify-content: center;
   min-height: 82px;
@@ -339,7 +338,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .info-campus {
-    padding: 20px 24px 40px;
+    padding: 0 5vw;
   }
   .imagen-decorativa-info-campus.dedo-arriba {
     right: 40px;
@@ -370,7 +369,7 @@
 
 @media (max-width: 767px) {
   .info-campus {
-    padding: 1vw 2vw;
+    padding: 0 5vw;
     h2, h3 {
       font-size: 3.5vw;
       -webkit-text-stroke: 0.7px black;
