@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://campus-camila-hiruela.netlify.app/sitemap.xml
+Sitemap: https://campuscamilahiruela.com/sitemap.xml
