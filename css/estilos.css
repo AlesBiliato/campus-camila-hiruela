@@ -1608,20 +1608,25 @@ select {
     padding: 1vw;
   }
   .equipo {
-    gap: 1.5vw;
+    gap: 0;
     grid-template-columns: 1fr;
     width: min(640px, 100% - 24px);
-    padding: 1vw 2vw;
+    padding: 1vw 2vw 2.5rem;
   }
   .equipo article {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    padding: clamp(4px, 0.8vw, 8px);
+    min-height: auto;
+    gap: 0;
+    padding: 1.25rem 1rem 1.4rem;
+    margin-bottom: 2.2rem;
   }
   .equipo article h3 {
     font-size: 5vw;
-    margin: 1vw;
+    margin: 0 0 0.85rem;
+    line-height: 1.15;
   }
   .equipo article img {
     width: 80%;
@@ -1630,25 +1635,39 @@ select {
     object-position: center;
     border-radius: 8px;
     border: 2px solid black;
+    margin: 0 auto 0.8rem;
+  }
+  .equipo article:last-child {
+    margin-bottom: 2rem;
   }
   .rol-equipo {
-    min-height: 2.4em;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4vw;
-    margin: clamp(4px, 0.6vw, 8px) 0;
+    margin: 0 0 0.9rem;
+    line-height: 1.25;
   }
   .frase-equipo {
-    min-height: 4.4em;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3.5vw;
+    margin: 0 0 0.85rem;
+    line-height: 1.45;
   }
   .bio-equipo {
+    margin: 0 0 0.85rem;
     font-size: 3vw;
     line-height: 1.55;
+  }
+  .bio-equipo + .bio-equipo {
+    margin-top: 0;
+  }
+  .equipo article .bio-equipo:last-child {
+    margin-bottom: 0;
   }
 }
 /* ==========================================================
